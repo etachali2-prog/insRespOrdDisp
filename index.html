@@ -20,26 +20,7 @@
    <button onclick="window.print()">Print This Sheet</button>
      
 
-     <script>
-        function checkPassword() {
-            // Set your password here!
-            const correctPassword = ""; 
-            
-            const userPassword = prompt("Please enter the password to view this sheet:");
-
-            if (userPassword === correctPassword) {
-                // Show the sheet if the password is correct
-                document.getElementById('protected-content').style.display = 'block';
-                document.body.style.paddingTop = '20px'; // Reset padding
-            } else {
-                alert("Incorrect password. Access denied.");
-                window.location.href = "https://google.com"; // Redirect them away
-            }
-        }
-
-        // Run the password check as soon as the page starts loading
-        window.onload = checkPassword;
-    </script>
+    
     <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQl8NJxndfffs3C16KMQji2ic8ahmi0LtmcqE1WIMuSxup5rLwisUttDI2UFh_FnAq8C1iIPLB3wKhW/pubhtml?gid=0&single=true"></iframe>
 </body>
 </html>
